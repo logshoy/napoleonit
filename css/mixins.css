@@ -1,0 +1,5 @@
+.no-outline {
+  outline: none;
+  background: transparent; }
+  .no-outline:before {
+    display: none; }
