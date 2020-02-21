@@ -224,11 +224,16 @@ input[type="radio"].visually-hidden {
   min-height: 400px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #ffffff;
   padding: 0 20px;
   background: url(../img/csu.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 35px; }
+
+.page-main__universite h2 {
+  color: #F9690E;
+  margin-bottom: 15px; }
 
 .page-main__border-photo {
   border: 3px solid red;
@@ -243,7 +248,9 @@ input[type="radio"].visually-hidden {
 .page-main__skills {
   display: flex;
   flex-wrap: nowrap;
-  color: #757575; }
+  color: #F9690E;
+  font-weight: bold;
+  font-size: 24px; }
 
 @media (min-width: 768px) {
   .page-main__container {
@@ -292,7 +299,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-around; }
 
 .form-number {
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 10%;
   width: 80%;
@@ -324,7 +331,14 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   text-decoration: none; }
 
-.form-number__number::before {
-  width: 10px;
-  width: 10px;
-  background-image: url(); }
+.form-number__icon {
+  position: relative; }
+
+.form-number__icon::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  height: 25px;
+  width: 25px;
+  background: url(../img/phone.svg); }
