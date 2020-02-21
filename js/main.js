@@ -9,12 +9,12 @@ var closeNumber = document.querySelector('.form-number__close');
 navMainWrapper.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+  if (navMainWrapper.classList.contains('main-nav--closed')) {
+    navMainWrapper.classList.remove('main-nav--closed');
+    navMainWrapper.classList.add('main-nav--opened');
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMainWrapper.classList.add('main-nav--closed');
+    navMainWrapper.classList.remove('main-nav--opened');
   }
 });
 

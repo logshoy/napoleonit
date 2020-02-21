@@ -33,6 +33,9 @@ h3 {
   padding: 0;
   margin: 0; }
 
+ul {
+  list-style: none; }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
