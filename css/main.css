@@ -6,15 +6,9 @@
 
 @font-face {
   font-weight: 400;
-  font-family: "Oswald";
+  font-family: "Circe";
   font-style: normal;
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/oswald-v17-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v17-latin_cyrillic-regular.woff") format("woff"); }
-
-@font-face {
-  font-weight: 500;
-  font-family: "Oswald";
-  font-style: normal;
-  src: url("../fonts/oswald-v17-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/oswald-v17-latin_cyrillic-500.woff") format("woff"); }
+  src: local("Circe"), local("Circe"), url("../fonts/Circe_W01_Regular.woff2") format("woff2"), url("../fonts/Circe_W01_Regular.woff") format("woff"); }
 
 body {
   min-width: 320px;
@@ -180,8 +174,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Oswald";
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase; }
@@ -189,7 +182,7 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #e6e6e6; }
 
 .site-list__item a {
-  color: #000000;
+  color: #444444;
   text-decoration: none; }
 
 @media (min-width: 768px) {
@@ -197,12 +190,11 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     width: 300px;
-    justify-content: space-between; }
+    justify-content: flex-end; }
   .site-list__item {
     font-size: 18px;
     line-height: 24px;
-    border: 0;
-    font-weight: 400; }
+    border: 0; }
     .site-list__item:last-child {
       border: 0; } }
 
@@ -217,8 +209,17 @@ input[type="radio"].visually-hidden {
 .page-main__container {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
-  margin-top: 50px; }
+  padding: 0 20px; }
+
+h1 {
+  margin: 30px 0;
+  line-height: 30px; }
+
+h2 {
+  margin: 20px 0; }
+
+.page-main__born-text {
+  margin-bottom: 30px; }
 
 .page-main__universite {
   min-height: 400px;
@@ -232,11 +233,13 @@ input[type="radio"].visually-hidden {
   padding-bottom: 35px; }
 
 .page-main__universite h2 {
-  color: #F9690E;
   margin-bottom: 15px; }
 
+.page-main__universite li {
+  margin: 20px 0; }
+
 .page-main__border-photo {
-  border: 3px solid red;
+  border: 3px solid #F9690E;
   min-width: 100px;
   min-height: 100px;
   margin: 20px 0;
@@ -252,12 +255,27 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 24px; }
 
+.page-main__additional-information .page-main__skills {
+  margin: 10px 0; }
+
 @media (min-width: 768px) {
   .page-main__container {
     width: 708px;
     padding: 0 30px; }
+  h1 {
+    text-align: inherit;
+    font-size: 50px; }
   .page-main__born {
-    display: flex; } }
+    display: flex; }
+  .page-main__additional-information li {
+    display: flex;
+    margin: 10px 0; }
+  .page-main__skills {
+    margin-right: 10px;
+    min-width: 300px; }
+  .page-main__additional-information .page-main__skills {
+    margin: 0;
+    margin-right: 10px; } }
 
 @media (min-width: 1440px) {
   .page-main__container {
@@ -300,7 +318,7 @@ input[type="radio"].visually-hidden {
 
 .form-number {
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 10%;
   width: 80%;
   height: 100px;
